@@ -42,7 +42,7 @@ minetest.register_on_joinplayer(function(player)
     local name = player and player:get_player_name()
     local lever = true
     local privs = minetest.get_player_privs(name)
-    local data = load_general_priv_check(name)
+    local data = check_if_checked(name)
 
     for _, staff in pairs(staffs) do
         if name == staff then
