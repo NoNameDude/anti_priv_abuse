@@ -9,7 +9,9 @@ function load_general_priv_check()
         if type(data) ~= "table" then
             data = {}
         end
-    end 
+    else
+        data = {}
+    end
     return data
 end
 
